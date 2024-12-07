@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prociono&display=swap">
+    
+    <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  /> 
+  </head>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: "Prociono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+
+    margin: 0;
+    padding: 0;
+    background-color:b ;
+    color: #ffffff;
+    
+}
+h2 span{
+    color: #0ef;
+    font-size: 50px;
+
+}
+
+/* Prevent text from overflowing */
+section, .intro, .last-text, .skills {
+    max-width: 100%; /* Ensures content fits within the viewport */
+    word-wrap: break-word; /* Break words if necessary */
+    overflow: hidden; /* Hide overflowing content */
+    box-sizing: border-box; /* Account for padding and border */
+}
+
+/* Ensure text resizes with screen */
+body, h1, h2, h3, p {
+    font-size: clamp(1rem, 2.5vw, 2rem); /* Dynamically adjusts text size */
+    line-height: 1.5; /* Improves readability */
+}
+.text2{
+    font-size: 20px;
+}
+.heading1{
+    color: #ffffff;
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    text-decoration: none;
+}
+.skills h2{
+    justify-content: center;
+    text-align: center;
+}
+h3 {
+    color: #000000;
+    font-size: 45px;
+}
+h3 span {
+    
+        color: #0ef;
+        font-size: 50px;
+    
+}
+
+
+header {
+    background-color: #0ef;
+    color: #001b29;
+    
+    padding: 1vw;
+    text-align: center;
+}
+
+section {
+    
+    padding:0.5rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    background: #001b29;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skill-bars .bar {
+    margin: 1rem 0;
+}
+
+.skill-bars .info {
+    margin-bottom: 0.5rem;
+}
+
+.skill-bars .progress-line {
+    background: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-bars .progress-line span {
+    display: block;
+    height: 10px;
+    background: #0ef;
+    width: 0;
+    animation: progress 2s forwards;
+}
+
+
+@keyframes progress {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background: #0ef;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #001b29;
+    font-size: 1rem;
+}
+
+button:hover {
+    background: #0cc;
+}
+
+#moreContent {
+    margin-top: 1rem;
+}
+
+.last-text p {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7, 85, 91);
+    font-weight: 200;
+    margin-top: 80px;
+
+}
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top i {
+    color: #000000;
+    background: #0ef;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+/* Last Section CSS */
+.last-tect {
+    background-color: #f8f8fa; /* Light grey background */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding top and bottom */
+    font-family: 'Arial', sans-serif; /* Font style */
+    font-size: 14px; /* Font size */
+    color: #333; /* Text color */
+    border-top: 1px solid #000000; /* Top border */
+}
+
+.last-tect p {
+    margin: 0; /* Remove default margin */
+}
+
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation-delay: calc(.2s * var(--1));
+}
+.contact-icons i:hover {
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+/*
+.contact-list i {
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}*/
+.contact-icons i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 1; /* Ensure opacity is set to 1 */
+    animation-delay: calc(.2s * var(--i));
+}/*
+.contact-form form .send:hover {
+    box-shadow: 0 0 5px #0ef,
+                0 0 25px #0ef,
+                0 0 50px #0ef,
+                0 0 100px cyan,
+                0 0 200px cyan;
+}*/
+ 
+                /* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    h2, .heading1 {
+        font-size: 2rem; /* Reduce heading size */
+    }
+
+    section, .skills, .contact-icons {
+        padding: 1rem; /* Add spacing for smaller devices */
+    }
+
+    .skill-bars .info {
+        text-align: center;
+    }
+}
+
+/* Very Small Screens (Phones) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .skill-bars .progress-line span {
+        height: 6px; /* Make progress bar smaller */
+    }
+
+    .contact-icons i {
+        width: 30px; /* Adjust size of icons */
+        height: 30px;
+        margin: 10px 5px;
+    }
+}
+
+  </style>
+  <body>
+    <header>
+      <h1>Privacy Policy</h1>
+    </header>
+<section class="contact-icons">
+    <h2 style="   color: #ffffff;
+    font-size: 45px;
+    text-align: center;">My <span style="  color: #0ef;
+    font-size: 50px;"> projects</span></h2>
+    <div class="home-sci">
+        <a
+          href="https://667965582815e.site123.me/"
+          style="--1: 7"
+          ><i class='bx bxs-graduation'></i
+        ></a>
+        <a
+          href="https://tangerine-biscochitos-22c74b.netlify.app/"
+          style="--1: 8"
+          ><i class='bx bxs-message-dots' ></i
+        ></a>
+        <a href="https://dixit-hacker-83.netlify.app/" style="--1: 9"
+          ><i class='bx bxs-devices'></i
+        ></a>
+        <a
+          href="https://dixitsolutions837.netlify.app/"
+          style="--1: 10"
+          ><i class='bx bxs-invader'></i
+        ></a>
+        <a
+          href="https://studenthubragistration83.netlify.app/"
+          style="--1: 11"
+          ><i class='bx bxs-food-menu' ></i
+        ></a>
+        </a>
+        <a
+        href="https://drive.google.com/file/d/1gl9G0Rbb4JPUz_5gP10giKdKWjf05kkZ/view?usp=sharing"
+        style="--1: 11"
+        ><i class='bx bxs-photo-album' ></i
+      ></a>
+      <a
+      href="https://whishwithdev83.netlify.app/"
+      style="--1: 11"
+      ><i class='bx bxs-party'></i
+    ></a>
+    <a
+    href="https://smailwhithdixit83.netlify.app/"
+    style="--1: 11"
+    ><i class='bx bx-money-withdraw'></i
+  ></a>
+  <a
+  href="https://dixitfestivesprak83.netlify.app/"
+  style="--1: 11"
+  ><i class='bx bx-gift'></i
+></a>
+<a
+href="https://dixitstictactoe83d.netlify.app/"
+style="--1: 11"
+><i class='bx bxs-joystick'></i
+></a>
+<a
+href="https://tuitionmanagmentapp83.netlify.app/"
+style="--1: 11"
+><i class='bx bxs-trophy'></i
+></a>
+  
+    
+      
+
+     
+      </div>
+      
+    </div>
+  </section>
+    <section class="intro">
+      <h2 class="heading1">Introduction</h2>
+      <p class="text1">
+        <b>
+          <br>
+          At Dixit Bhavsar's AI Tool, we prioritize your privacy and are committed to protecting your personal data. This Privacy Policy outlines how we handle your data, ensuring transparency and compliance with privacy standards.
+          <br><br>
+          This AI tool was created with inspiration from my esteemed Teacher and Sir, Manish Vyas and Rachana Vyas, who have always motivated me to innovate and explore technology. Their guidance continues to be the foundation of my growth and this project.<br><br>
+          <h2 class="heading1">1. Information We Collect.</h2><br>
+          <p class="text2"> 1 .Data You Provide:</p><br>
+          <li>
+            When interacting with the tool, you may input text queries, which will be processed to provide relevant responses.
+          </li>
+          <br>
+          <li>
+            Any personal information entered (e.g., names or other identifiers) is neither stored nor shared.
+          </li>
+          <br>
+          <p class="text2"> 2. Automatic Data Collection:</p><br>
+          <li>
+            Basic metadata like timestamps and interaction logs may be collected to improve the tool’s performance.
+          </li>
+          <br>
+          <li>
+            Cookies or similar technologies might be used to enhance user experience.
+          </li>
+          <br>
+          <h2 class="heading1">2. How We Use Your Information</h2>
+
+          <br>
+          <li>
+            To generate accurate and helpful responses based on your input.
+          </li>
+          <br>
+          <li>
+            To improve the tool’s functionalities and ensure a seamless user experience.
+          </li>
+          <br>
+          <li>
+            Data collected is only temporarily used during your session and is not stored permanently. 
+          </li>
+          <br>
+          <h2 class="heading1">3. Third-Party Services</h2>
+
+          <br>
+          <p>This tool integrates technologies provided by:</p>
+          <br>
+          <li>
+            Google: APIs may be utilized for features like search suggestions, voice integration, or natural language understanding.
+          </li>
+          <br>
+          <li>
+            ChatGPT by OpenAI: Forms the backbone of the AI's conversational abilities, ensuring intelligent and contextual responses.
+
+          </li>
+          <br>
+          <h2 class="heading1">4. Your Data is Secure</h2>
+        <br>
+        <p>We implement robust measures to safeguard your data during its temporary processing. No personally identifiable information is stored or shared with external entities.</p>
+        <br>
+        <h2 class="heading1">5. Your Rights</h2>
+      <br>
+      <p>As a user, you have the right to:
+      </p>
+      <br>
+      <li>
+        Know what data is being processed and how.
+      </li>
+      <br>
+      <li>
+        Request the immediate deletion of any temporary data during your session.
+
+      </li>
+      <br>
+      
+      <h2 class="heading1">6. Acknowledgments</h2>
+    <br>
+    <p>This project is dedicated to my tuition teachers Manish Vyas Sir and Rachana Vyas Teacher, who have been instrumental in shaping my skills and encouraging me to innovate. Their unwavering support and inspiration have made this project possible.</p>
+      </b>
+      <br>
+      
+      <h2 class="heading1">7. Contact Information
+      </h2>
+    <br>
+    <p>If you have any questions about this Privacy Policy, feel free to reach out:</p>
+    <br>
+      <li>Email: <a href="#">dixitbhavsar2007@gmail.com</a></li>
+      <br>
+      <p>Thank you for trusting this tool. Your privacy and satisfaction are our utmost priorities!</p>
+    </section>
+    <section class="skills">
+      <h2>professional <span>Skills</span></h2>
+      <div class="skill-bars">
+        <div class="bar">
+          <div class="info">
+
+
+            <span>HTML</span>
+          </div>
+          <div class="progress-line html">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+          <div class="info">
+            <span>CSS</span>
+          </div>
+          <div class="progress-line css">
+            <span></span>
+          </div>
+        </div>
+        <div class="bar">
+            <div class="info">
+              <span>C++</span>
+            </div>
+            <div class="progress-line c++">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Python</span>
+            </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>C</span>
+            </div>
+            <div class="progress-line c">
+              <span></span>
+            </div>
+          </div>
+        <div class="bar">
+          <div class="info">
+            <span>JavaScript</span>
+          </div>
+          <div class="progress-line js">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h3 style="text-align: center;">Thank <span>You.</span></h3>
+
+  
+    <div class="last-tect">
+        <p><b>Developed with love by Dixit Bhavsar © 2024</b></p>
+        </div>
+        
+        
+        <a href="#" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
+    <script>
+        document.getElementById('moreBtn').addEventListener('click', function() {
+    var moreContent = document.getElementById('moreContent');
+    if (moreContent.style.display === 'none') {
+        moreContent.style.display = 'block';
+        this.textContent = 'Show Less';
+    } else {
+        moreContent.style.display = 'none';
+        this.textContent = 'Show More';
+    }
+});
+
+
+    </script>
+  </body>
+</html>
