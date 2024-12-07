@@ -31,9 +31,7 @@ Getting Started
 To get started with ReMin AI:
 
 Clone the repository to your local machine:
-bash
-Copy code
-git clone https://github.com/your-repository-name.git
+ReMin Ai LInk *https://remin-ai-d83.netlify.app/*
 Follow the setup instructions in the repository's documentation to install the necessary dependencies and start using ReMin AI.
 If you encounter any issues or need further assistance, feel free to reach out through the contact information provided.
 
