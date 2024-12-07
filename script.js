@@ -8,7 +8,7 @@ let image = document.querySelector("#image img");
 let imageinput = document.querySelector("input[type='file']");
 
 const Api_Url =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyA1W5QnXWK0HbuHLv-Vw7YAMA5ZpTvgc6Y";
+  "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=_API_KEY_ENTER";
 
 let user = {
   message: null,
